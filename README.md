@@ -1,30 +1,62 @@
-# React + TypeScript + Vite
+<p align="center">
+  <h1 align="center">NLW Journey - Trilha ReactJS</h1>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <a alt="ReactJS">
+    <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+  </a>
+  <a alt="Vite">
+    <img src="https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white" />
+  </a>
+  <a alt="TypeScript">
+    <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" />
+  </a>
+  <a alt="TailwindCSS">
+    <img src="https://img.shields.io/badge/TAILWINDCSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  </a>
+  <a alt="React Router Dom">
+    <img src="https://img.shields.io/badge/React%20Router-CA4245.svg?style=for-the-badge&logo=React-Router&logoColor=white" />
+  </a>
+  <a alt="Axios">
+    <img src="https://img.shields.io/badge/Axios-5A29E4.svg?style=for-the-badge&logo=Axios&logoColor=white" />
+  </a>
+  <a alt="Figma">
+     <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=for-the-badge" />
+  </a>
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <a href="#tecnologias">Tecnologias</a> •
+  <a href="#projeto">Projeto</a> •
+  <a href="#layout">Layout</a> •  
+  <a href="#licenca">Licença</a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+  <img alt="Preview do projeto desenvolvido." src=".github/preview.png" width="80%">
+</p>
 
-## Expanding the ESLint configuration
+## 💻 Projeto<a id="projeto"></a>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Projeto de um planejador de viagens com gerenciamento de atividades, links e participantes desenvolvido durante o evento "NLW Journey" da Rocketseat na Trilha ReactJS.
 
-- Configure the top-level `parserOptions` property like this:
+## 🚀 Tecnologias<a id="tecnologias"></a>
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- ReactJS
+- Vite
+- Typescript
+- Tailwind CSS
+- React Router Dom
+- Axios
+- Figma
+
+## 🔖 Layout<a id="layout"></a>
+
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/community/file/1392276515495389646/nlw-journey-planejador-de-viagem).
+
+## 📝 Licença<a id="licenca"></a>
+
+Esse projeto está sob a licença MIT.
