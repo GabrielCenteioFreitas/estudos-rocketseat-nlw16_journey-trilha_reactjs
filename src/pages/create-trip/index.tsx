@@ -4,6 +4,7 @@ import { ConfirmTripModal } from "./confirm-trip-modal";
 import { InviteGuestsModal } from "./invite-guests-modal";
 import { DestinationAndDateStep } from "./steps/destination-and-date-step";
 import { InviteGuestsStep } from "./steps/invite-guests-step";
+import { DateRange } from "react-day-picker";
 
 export function CreateTripPage() {
   const navigate = useNavigate();
@@ -11,6 +12,11 @@ export function CreateTripPage() {
   const [isGuestsInputOpen, setIsGuestsInputOpen] = useState(false)
   const [isGuestsModalOpen, setIsGuestsModalOpen] = useState(false)
   const [isConfirmTripModalOpen, setIsConfirmTripModalOpen] = useState(false)
+
+  const [destination, setDestination] = useState('')
+  const [ownerName, setOwnerName] = useState('')
+  const [ownerEmail, setOwnerEmail] = useState('')
+  const [eventStartAndEndDates, setEventStartAndEndDates] = useState<DateRange | undefined>()
 
   const [emailsToInvite, setEmailsToInvite] = useState([
     'diego@rocketseat.com.br'
@@ -66,6 +72,12 @@ export function CreateTripPage() {
 
   function createTrip(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
+    
+    console.log(destination)
+    console.log(ownerName)
+    console.log(ownerEmail)
+    console.log(eventStartAndEndDates)
+    console.log(emailsToInvite)
 
     navigate('/trips/123')
   }
@@ -86,6 +98,9 @@ export function CreateTripPage() {
             isGuestsInputOpen={isGuestsInputOpen}
             openGuestsInput={openGuestsInput}
             closeGuestsInput={closeGuestsInput}
+            setDestination={setDestination}
+            eventStartAndEndDates={eventStartAndEndDates}
+            setEventStartAndEndDates={setEventStartAndEndDates}
           />
 
           {isGuestsInputOpen && (
@@ -118,6 +133,8 @@ export function CreateTripPage() {
         <ConfirmTripModal
           closeConfirmTripModal={closeConfirmTripModal}
           createTrip={createTrip}
+          setOwnerName={setOwnerName}
+          setOwnerEmail={setOwnerEmail}
         />
       )}
     </div>
